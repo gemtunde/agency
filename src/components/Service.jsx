@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Spiderman from '../img/spiderman.png'
+import Spiderman from '../img/spiderman.png';
+import Play from '../img/play.png';
+import MiniCard from './MiniCard';
 
 const Service = () => {
   return (
@@ -20,6 +22,12 @@ const Service = () => {
                       editors have all been carefully selected and are all highly motivated by our bonus system to create award-worthy work for our clients. Interested in working with our brand animation team? Then challenge us with your video production brief – our managing director, 
                     Jamie, is waiting to hear from you.
                 </Description>
+                  <CardContainer>
+                        <MiniCard />
+                        <MiniCard />
+                        <MiniCard />
+                 </CardContainer>
+                 <Button><Icon src={Play} />Stopped video at 01:03:33 </Button>
             </Wrapper>
         </Right>
     </Container>
@@ -58,4 +66,27 @@ const Description = styled.p`
 margin-top: 20px;
     color: grey;
     font-size: 20px;
-`
+`;
+const CardContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+`;
+const Button = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: white;
+    background-color: crimson;
+    border: none;
+    border-radius: 10px;
+    width: 180px;
+    margin-top: 20px;
+    cursor: pointer;
+`;
+const Icon = styled.img`
+  width: 20px;  
+  margin-right: 5px;
+`;

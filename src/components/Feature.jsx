@@ -36,6 +36,7 @@ const Feature = () => {
                 is waiting to hear from you.
             </Description>
             <Button>Learn more</Button>
+          
         </Right>
         <AnimatedShapes />
         </Container>
