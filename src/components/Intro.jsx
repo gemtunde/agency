@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Batman from '../img/batman.png';
+import AnimatedShapes from './AnimatedShapes';
 
 
 const Intro = () => {
@@ -20,7 +22,13 @@ const Intro = () => {
             </Contact>
         </Info>
      </Left>
-     <Right>Right</Right>
+     <Right>
+        <Image 
+            src={Batman}
+            alt='batman'
+         />
+     </Right>
+     <AnimatedShapes />
     </Container>
   )
 }
@@ -84,4 +92,9 @@ color: white;
 
 const Right =styled.div`
 width: 40%;
+ z-index: 5;
 `;
+const Image = styled.img`
+    width: 100%;
+   
+`

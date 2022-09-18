@@ -25,6 +25,7 @@ const Navbar = () => {
 export default Navbar;
 const Container = styled.div`
     height: 50px;
+    z-index: 10;
 `
 const Wrapper = styled.div`
     padding: 10px 20px;
